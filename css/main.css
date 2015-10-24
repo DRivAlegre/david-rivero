@@ -1,0 +1,112 @@
+@font-face{
+  font-family: 'express-way';
+  src:url('../fonts/exprswy_free.ttf');
+}
+
+body#main_body{
+  font-family: 'express-way','Arial', 'Helvetica', 'Sans';
+  font-size: 18px;
+}
+
+header {
+  width:100%;
+  overflow: hidden;
+  clear:right;
+}
+header nav{
+  z-index:10;
+  height: inherit;
+  min-height: 65px;
+  margin:0;
+  position: fixed;
+  left:0;
+  top:0;
+  width:100%;
+  background-color: #e74c3c;
+  color:white;
+  text-align: center;      
+}
+header nav div.wrap-menu{
+  font-size:40px;
+  max-width: 50px;
+  margin-right:24px;
+}
+header nav ul {
+  margin-top:10px;
+  padding-left:0;        
+}
+header nav ul li{
+  display: inline-block;
+  padding:10px;
+  font-weight: bold;
+}
+
+section{
+  margin:0;
+}
+
+section .avatar{
+  background-color:rgba(44,62,80,0.5);
+  padding-top:83px;
+  padding-bottom:30px;
+}
+section .avatar figure{
+  max-width: 200px;
+  margin-left:auto;
+  margin-right:auto;
+}
+section .avatar figure img{
+  width:100%;
+  border-radius: 100%;
+}
+section .avatar div.avatar_p{
+  text-align: center;        
+}
+section .avatar div.avatar_p p{
+  color:white;
+  font-weight:bold;
+  margin-bottom:0;
+}
+section .avatar div.avatar_p p:first-child{font-size:36px;}
+section .avatar div.avatar_p p:last-child{
+  font-size:22px;
+  margin-top:0;
+}
+section div.section_desc{
+  border-left:1px solid black;
+  border-right:1px solid black;
+  margin-top:30px;
+  margin-bottom:30px;
+  max-width: 850px;    
+}
+section div.section_desc div.section_component{
+  text-align: center;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+section .skills{
+  text-align: center;
+  color:white;
+  background-color:#34495e;
+  padding-top:40px;
+  padding-bottom: 40px;
+}
+section .skills h3{
+  font-size:40px;
+  margin-bottom:40px;
+}
+section .skills div.row .skill_item{
+  padding-bottom:60px;
+}
+section .skills div.row .skill_item img{
+  width:40%;
+  margin-left: auto;
+  margin-right:auto;
+  display: block;
+}
+
+footer{
+  background-color:rgba(37,23,31,0.95);
+  min-height: 150px;
+  width:100%;
+}
