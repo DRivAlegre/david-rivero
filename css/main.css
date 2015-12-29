@@ -2,6 +2,9 @@
   font-family: 'express-way';
   src:url('../fonts/exprswy_free.ttf');
 }
+.minift{
+  font-size:12px;
+}
 
 body#main_body{
   font-family: 'express-way','Arial', 'Helvetica', 'Sans';
@@ -104,9 +107,37 @@ section .skills div.row .skill_item img{
   margin-right:auto;
   display: block;
 }
-
+section .section_component{
+  padding:40px;
+}
+section .section_component h3{
+  text-align: center;
+}
+section .section_component .row .col-proj{
+  padding:10px;
+  text-align: center;
+  -webkit-transition:0.5s ease;
+  -moz-transition:0.5s ease;
+  -ms-transition:0.5s ease;
+  transition:0.5s ease;
+}
+section .section_component .row .col-proj:hover{
+  -webkit-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+  -ms-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+}
+section .view_more{
+  margin-top:30px;
+  text-align: center;
+}
 footer{
   background-color:rgba(37,23,31,0.95);
   min-height: 150px;
   width:100%;
+  padding:15px;
+  color:white;
+}
+footer .socialfooter{
+  margin-bottom:20px;
 }
