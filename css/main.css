@@ -127,6 +127,15 @@ section .section_component .row .col-proj:hover{
   -ms-box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
 }
+section .section_component .row .col-proj figure{
+  max-width: 64px;
+  max-height: 64px;
+  margin:20px auto;
+}
+section .section_component .row .col-proj figure img{
+  width:100%;
+  height:auto;
+}
 section .view_more{
   margin-top:30px;
   text-align: center;
