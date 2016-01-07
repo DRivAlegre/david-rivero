@@ -27,7 +27,11 @@ header nav{
   width:100%;
   background-color: #e74c3c;
   color:white;
-  text-align: center;      
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 10px black;
+  -moz-box-shadow: 1px 1px 10px black;
+  -ms-box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 10px black;   
 }
 header nav div.wrap-menu{
   font-size:40px;
@@ -162,3 +166,4 @@ footer{
 footer .socialfooter{
   margin-bottom:20px;
 }
+
