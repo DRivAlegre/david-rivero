@@ -1,20 +1,20 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <title>David Rivero - Portfolio</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is me. David Rivero. Software Developer Passionate">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="shortcut icon" href="images/games-icon.png">
-    <link rel="stylesheet" href="css/flaticon.css">
-    
+
+    <link rel="stylesheet" href="/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/dist/css/normalize.css" />
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <link rel="stylesheet" href="/dist/css/responsive.css">
+    <link rel="shortcut icon" href="/dist/img/games-icon.png">
+    <link rel="stylesheet" href="/dist/css/flaticon.css">
+
   </head>
   <body id="main_body">
     <!--[if lt IE 10]>
@@ -22,67 +22,74 @@
     <![endif]-->
 
     <header>
-      <nav>
-        <ul>
-          <li><a href="#aboutme" class>About me</a></li>
-          <li><a href="#skills" class>Skills</a></li>
-          <li><a href="#projects" class>Personal projects</a></li>
-        </ul>
-        <!-- <div class="wrap-menu"><span class="glyphicon glyphicon-menu-hamburger"></span></div> -->
-      </nav>
-    </header>
-    <section>
-      <div class="avatar">
-        <figure><img src="images/avatar.jpeg" alt="My photo"></figure>
+      <div class="avatar wall-section">
+        <figure><img src="/dist/img/me.png" alt="Profile"></figure>
         <div class="avatar_p">
           <p>David Rivero</p>
-          <p>Frontend Dev Passionate</p>
+          <p>Software Developer Passionate</p>
         </div>
       </div>
-      <div id="aboutme" class="container section_desc">
-        <div class="section_component">
+    </header>
+
+    <section>
+      <div id="aboutme" class="container section-desc wall-section">
+        <div class="section-component">
           <h3>Who am I?</h3>
-          <p>I'm a passionate developer and a student. Actually I study Information Technologies Analyst at ORT University; and when I have time, I invest my time creating amazing personal projects.</p>
-          <p>I like to dedicate my time creating an idea, validate it, research and make it a shape, for after that, implement it as code.</p>
-          <p>I'm really motivate for learn new technologies as AngularJs, ReactJs, RoR, etc. and also find people with the same passion with its own work.<!-- , ReactJs and d3Js -->.</p>
+          <p>I'm a passionate developer and a continuous self taught. Actually I study Information Technologies Analyst at ORT University;
+             and when I have time, I invest my time creating amazing personal projects.</p>
+          <p>I like to dedicate my time finding ideas that could impact in communities and
+             citizens and do that with code; and finding amazing teams that want to change the world.</p>
+          <p>I'm really motivate for learn new technologies as reactive applications, IoT, machine learning, etc.
+             and also find people with the same passion with its own work.</p>
         </div>
       </div>
-      <div id="skills" class="skills">
-          <h3>Skills</h3>
-          <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="images/html5.png" alt="HTML5"></div>
-            <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="images/css3.png" alt="CSS3"></div>
-            <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="images/js.svg" alt="Javascript"></div>
-<!--             <div class="col-md-3 col-sm-6 col-xs-6 skill_item nodejs_item"><img src="images/nodejs.svg" alt="NodeJs"></div> -->
-          </div>
-          <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="images/sass.svg" alt="Sass"></div>
-            <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="images/angular.svg" alt="AngularJs"></div>
-            <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="images/react.svg" alt="ReactJs"></div>
-           <!--  <div class="col-md-3 col-sm-6 col-xs-6 skill_item"><img src="images/d3js.svg" alt="d3Js"></div> -->
-          </div>
+
+      <div id="skills" class="skills wall-section">
+        <h3>Skills</h3>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="/dist/img/html5.png" alt="HTML5"></div>
+          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="/dist/img/js.svg" alt="Javascript"></div>
+          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="/dist/img/angular.svg" alt="AngularJs"></div>
         </div>
-      <!-- <div class="container section_desc">
-        <div class="section_component">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="/dist/img/python.svg" alt="Python"></div>
+          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="/dist/img/django.svg" alt="Django"></div>
+          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="/dist/img/sass.svg" alt="Sass"></div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="/dist/img/react.svg" alt="ReactJs"></div>
+        </div> -->
+      </div>
+
+      <div class="container section-desc wall-section">
+        <div class="section-component">
           <h3>Attend' meetings</h3>
           <div class="row">
-            <div class="col-md-4 col-sm-12 col-xs-12">Startup Weekend 2015</div>
-            <div class="col-md-4 col-sm-12 col-xs-12">Kill All The Memes Project</div>
-            <div class="col-md-4 col-sm-12 col-xs-12">Mercado Libre' Hackathon</div>
+            <div class="col-md-4 col-sm-12 col-xs-12">Startup Weekend 2016</div>
+            <div class="col-md-4 col-sm-12 col-xs-12">NASA Space Apps Challenge 2016</div>
+            <div class="col-md-4 col-sm-12 col-xs-12">Mercado Libre Hackathon</div>
           </div>
-      </div> -->
-      <div id="projects" class="section_component">
+        </div>
+      </div>
+
+      <div class="wall-section wall-nasa">
+        <div class="wall-nasa-cover-op">
+          <p>NASA Space Apps 2016 - Equipo Pastora</p>
+        </div>
+      </div>
+
+      <div id="projects" class="section-component wall-section">
           <h3>Personal projects</h3>
           <div class="row">
             <div class="col-proj col-md-6 col-sm-12 col-xs-12">
               <h3>TVify</h3>
-              <figure><img src="images/film_icon.png" alt="Icon made by SimpleIcon, simpleicon.com"></figure>
+              <figure><img src="/dist/img/film_icon.png" alt="Icon made by SimpleIcon, simpleicon.com"></figure>
               <p>Find your favourites TV shows in one place.</p>
               <div><span>Demo: </span><a href="http://drivalegre.github.io/TVify">http://drivalegre.github.io/TVify</a></div>
             </div>
             <div class="col-proj col-md-6 col-sm-12 col-xs-12">
               <h3>TweetFinder Stream</h3>
-              <figure><img src="images/tweetstream.png" alt="Icon made by SimpleIcon, simpleicon.com"></figure>
+              <figure><img src="/dist/img/tweetstream.png" alt="Icon made by SimpleIcon, simpleicon.com"></figure>
               <p>A ReactJs and Angular app for request for a stream API by Twitter.</p>
               <div><span class="coming_soon">Coming soon</span></div>
             </div>
@@ -93,8 +100,10 @@
           </div>
         </div>
       </div>
+
     </section>
-    <footer>
+
+    <footer class="wall-section">
       <div class="socialfooter">
         <p>Contact me</p>
         <div class="socialicons">
@@ -104,5 +113,8 @@
       </div>
       <div class="minift">Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a>, <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
     </footer>
+
+    <div class="navigator">
+    </div>
   </body>
 </html>

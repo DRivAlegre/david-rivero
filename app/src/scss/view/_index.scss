@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'express-way';
+  src: url('../fonts/exprswy_free.ttf');
+}
+.minift {
+  font-size: 12px;
+}
+
+body#main_body {
+  font-family: 'express-way','Arial', 'Helvetica', 'Sans';
+  font-size: 18px;
+
+  .wall-section {
+    height: 100vh;
+  }
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+
+  .avatar {
+    background: url('/dist/img/colonia.jpg');
+    padding-top: 83px;
+    padding-bottom: 30px;
+
+    figure {
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+
+      img {
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    div.avatar_p {
+      text-align: center;
+
+      p {
+        color: white;
+        font-weight: bold;
+        margin-bottom: 0;
+        &:first-child {
+          font-size: 36px;
+        }
+        &:last-child {
+          font-size: 22px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+section {
+  margin: 0;
+  div.section-desc {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 850px;
+
+    div.section-component {
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  .skills {
+    background-color: #34495e;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    h3 {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    div.row .skill_item {
+      padding-bottom: 60px;
+
+      img {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    }
+  }
+
+  .section-component {
+    padding: 40px;
+
+    h3 {
+      text-align: center;
+    }
+
+    .row .col-proj {
+      padding: 10px;
+      text-align: center;
+      @include prefixonprop(transition, 0.5s ease);
+
+      &:hover {
+        @include prefixonprop(box-shadow, 10px 10px 40px 0px rgba(0, 0, 0, 0.75));
+      }
+
+      figure {
+        max-width: 64px;
+        max-height: 64px;
+        margin: 20px auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .wall-nasa {
+    background-image: url('/dist/img/nasa.jpg');
+    background-size: cover;
+    color: white;
+
+    .wall-nasa-cover-op {
+      background: rgba(0,0,0,0.25);
+      height: 100%;
+      position: relative;
+      width: 100%;
+
+      p {
+        bottom: 0;
+        right: 15px;
+        position: absolute;
+      }
+    }
+  }
+
+  .view_more {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+footer {
+  background-color: rgba(37,23,31,0.95);
+  min-height: 150px;
+  width: 100%;
+  padding: 15px;
+  color: white;
+
+  .socialfooter {
+    margin-bottom: 20px;
+  }
+}

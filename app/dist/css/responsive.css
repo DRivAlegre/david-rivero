@@ -1,19 +1,21 @@
-@media(min-width:768px){
-	body#main_body header nav .wrap-menu{
-		display:none;
-	}
-}
-@media(max-width: 767px){
-	header nav ul li{
+@media(min-width:768px) {
+	body#main_body header nav .wrap-menu {
 		display: none;
 	}
-	section div.section_desc{
-		border-left:0;
-		border-right:0;
+}
+@media(max-width: 767px) {
+	header nav ul li {
+		display: none;
 	}
-	section div.section_desc div.section_component{padding-top:0;}
-	section div.skills div.row .skill_item.nodejs_item{
-		padding-top:6%;
-		padding-bottom:0;
+	section div.section_desc {
+		border-left: 0;
+		border-right: 0;
+	}
+	section div.section_desc div.section_component {
+		padding-top:0;
+	}
+	section div.skills div.row .skill_item.nodejs_item {
+		padding-top: 6%;
+		padding-bottom: 0;
 	}
 }

@@ -8,7 +8,7 @@ var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 
 var PATHS = {
-  sass: ['/app/src/scss/*.scss', './app/src/scss/**/*.scss'],
+  sass: ['/app/src/scss/main.scss', './app/src/scss/**/*.scss'],
   html: ['./app/src/js/**/templates/*.html', './app/src/js/**/templates/**/*.html'],
   img: ['app/src/img/*.png', 'app/src/img/*.jpg', 'app/src/img/*.jpeg', 'app/src/img/*.svg']
 };
@@ -21,8 +21,8 @@ gulp.task('sass', function (done) {
   var task = gulp.src(PATHS.sass);
   task = task
     .pipe(sass())
-    .pipe(rename({ extname: '.css' }))
-    .pipe(cleanCss());
+    .pipe(rename({ extname: '.css' }));
+    // .pipe(cleanCss());
   task
     .pipe(gulp.dest('./app/dist/css/'))
     .on('end', done);
