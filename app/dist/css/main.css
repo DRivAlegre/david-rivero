@@ -13,7 +13,7 @@ header {
   width: 100%;
   overflow: hidden; }
   header .avatar {
-    background: url("/dist/img/colonia.jpg") center center;
+    background: url("/david-rivero/app/dist/img/colonia.jpg") center center;
     padding-top: 83px;
     padding-bottom: 30px; }
     header .avatar figure {
@@ -98,9 +98,9 @@ section {
     color: white;
     height: 100vh; }
     section .wall-img.wall-nasa {
-      background-image: url("/dist/img/nasa.jpg"); }
+      background-image: url("/david-rivero/app/dist/img/nasa.jpg"); }
     section .wall-img.wall-jsconf {
-      background-image: url("/dist/img/jsconf-code.jpg"); }
+      background-image: url("/david-rivero/app/dist/img/jsconf-code.jpg"); }
     section .wall-img .wall-img-cover-op {
       background: rgba(0, 0, 0, 0.25);
       height: 100%;
