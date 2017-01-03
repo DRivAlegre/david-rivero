@@ -1,0 +1,38 @@
+{
+  "name": "david-rivero",
+  "version": "1.0.1",
+  "description": "Landing personal page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DRivAlegre/DavidRivero.git"
+  },
+  "keywords": [
+    "developer",
+    "software",
+    "fullstack",
+    "development",
+    "frontend",
+    "backend"
+  ],
+  "author": "David Rivero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DRivAlegre/DavidRivero/issues"
+  },
+  "homepage": "https://github.com/DRivAlegre/DavidRivero#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1",
+    "run-sequence": "^1.2.2"
+  }
+}
