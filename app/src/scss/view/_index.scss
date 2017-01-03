@@ -16,7 +16,7 @@ header {
   overflow: hidden;
 
   .avatar {
-    background: url('dist/img/colonia.jpg') center center;
+    background: url('/david-rivero/app/dist/img/colonia.jpg') center center;
     padding-top: 83px;
     padding-bottom: 30px;
 
@@ -137,11 +137,11 @@ section {
     height: 100vh;
 
     &.wall-nasa {
-      background-image: url('dist/img/nasa.jpg');
+      background-image: url('/david-rivero/app/dist/img/nasa.jpg');
     }
 
     &.wall-jsconf {
-      background-image: url('dist/img/jsconf-code.jpg');
+      background-image: url('/david-rivero/app/dist/img/jsconf-code.jpg');
     }
 
     .wall-img-cover-op {
