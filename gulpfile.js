@@ -9,6 +9,7 @@ var imagemin = require('gulp-imagemin');
 
 var PATHS = {
   sass: ['/app/src/scss/main.scss', './app/src/scss/**/*.scss'],
+  vendors_css: ['./app/src/vendors/css/*.css'],
   html: ['./app/src/js/**/templates/*.html', './app/src/js/**/templates/**/*.html'],
   img: ['app/src/img/*.png', 'app/src/img/*.jpg', 'app/src/img/*.jpeg', 'app/src/img/*.svg']
 };
@@ -21,17 +22,17 @@ gulp.task('sass', function (done) {
   var task = gulp.src(PATHS.sass);
   task = task
     .pipe(sass())
-    .pipe(rename({ extname: '.css' }));
-    // .pipe(cleanCss());
+    .pipe(rename({ extname: '.css' }))
+    .pipe(cleanCss());
   task
     .pipe(gulp.dest('./app/dist/css/'))
     .on('end', done);
 });
-gulp.task('ext-css', function (done) {
-  var task = gulp.src(CSS_DEPS);
+gulp.task('vendors-css', function (done) {
+  var task = gulp.src(PATHS.vendors_css);
   task = task
-    .pipe(rename({ extname: '.css' }))
-    .pipe(cleanCss());
+    .pipe(cleanCss())
+    .pipe(rename({ extname: '.min.css' }));
   task
     .pipe(gulp.dest('./app/dist/css/'))
     .on('end', done);
