@@ -7,15 +7,13 @@
 
 body#main_body {
   font-family: 'express-way','Arial', 'Helvetica', 'Sans';
-  font-size: 18px; }
-  body#main_body .wall-section {
-    height: 100vh; }
+  overflow-x: hidden; }
 
 header {
   width: 100%;
   overflow: hidden; }
   header .avatar {
-    background: url("/dist/img/colonia.jpg");
+    background: url("/dist/img/colonia.jpg") center center;
     padding-top: 83px;
     padding-bottom: 30px; }
     header .avatar figure {
@@ -65,6 +63,12 @@ section {
         margin-left: auto;
         margin-right: auto;
         display: block; }
+  section .inner-container-experience {
+    margin-top: 30px; }
+    section .inner-container-experience .attending-img, section .inner-container-experience .experience-img {
+      max-width: 100%; }
+      section .inner-container-experience .attending-img img, section .inner-container-experience .experience-img img {
+        width: 100%; }
   section .section-component {
     padding: 40px; }
     section .section-component h3 {
@@ -88,16 +92,21 @@ section {
         section .section-component .row .col-proj figure img {
           width: 100%;
           height: auto; }
-  section .wall-nasa {
-    background-image: url("/dist/img/nasa.jpg");
+  section .wall-img {
     background-size: cover;
-    color: white; }
-    section .wall-nasa .wall-nasa-cover-op {
+    background-position: center center;
+    color: white;
+    height: 100vh; }
+    section .wall-img.wall-nasa {
+      background-image: url("/dist/img/nasa.jpg"); }
+    section .wall-img.wall-jsconf {
+      background-image: url("/dist/img/jsconf-code.jpg"); }
+    section .wall-img .wall-img-cover-op {
       background: rgba(0, 0, 0, 0.25);
       height: 100%;
       position: relative;
       width: 100%; }
-      section .wall-nasa .wall-nasa-cover-op p {
+      section .wall-img .wall-img-cover-op p {
         bottom: 0;
         right: 15px;
         position: absolute; }
@@ -113,3 +122,13 @@ footer {
   color: white; }
   footer .socialfooter {
     margin-bottom: 20px; }
+
+@media screen and (min-width: 992px) {
+  body#main_body {
+    font-size: 18px; }
+    body#main_body .wall-section {
+      height: 100vh; } }
+
+@media screen and (max-width: 991px) {
+  section div.section-desc {
+    border: none; } }
