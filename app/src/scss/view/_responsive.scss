@@ -4,6 +4,10 @@
 
     .wall-section {
       height: 100vh;
+
+      &#projects {
+        height: auto;
+      }
     }
   }
 }
