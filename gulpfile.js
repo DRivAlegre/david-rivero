@@ -53,7 +53,7 @@ gulp.task('min-img', function (done) {
 gulp.task('build', function (cb) {
   sequence(['sass', 'html'], cb);
 });
-gulp.task('watch', ['sass', 'html', 'server'], function () {
+gulp.task('watch', ['sass', 'html'], function () {
   gulp.watch(PATHS.sass, { interval: 1000 }, ['sass']);
   gulp.watch(PATHS.html, { interval: 1000 }, ['html']);
 });

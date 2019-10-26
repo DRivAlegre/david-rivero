@@ -1,161 +1,40 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>David Rivero - Portfolio</title>
-    <meta name="description" content="This is me. David Rivero. Software Developer Passionate">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- build:css(.) styles/vendor.css -->
-
-    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="dist/css/normalize.min.css" />
-    <link rel="stylesheet" href="dist/css/main.css">
-    <link rel="stylesheet" href="dist/css/responsive.css">
-    <link rel="shortcut icon" href="dist/img/command-line.png">
-    <link rel="stylesheet" href="dist/css/flaticon.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>David Rivero</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/main.css" />
   </head>
-  <body id="main_body">
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <header>
-      <div class="avatar wall-section">
-        <figure><img src="dist/img/me.png" alt="Profile"></figure>
-        <div class="avatar_p">
-          <p>David Rivero</p>
-          <p>Software Developer Passionate</p>
+  <body class="body-index">
+    <div class="profile">
+      <figure class="profile__pict-content">
+        <img src="dist/img/me-profile.jpg" alt="My profile" class="profile__pict" />
+      </figure>
+      <div class="profile__content">
+        <h1 class="profile__name">David Rivero</h1>
+        <p class="profile__professional-role">Fullstack web developer</p>
+        <p class="profile__link"><a href="/timeline.html">Look at my full profile</a></p>
+      </div>
+      <div class="profile__contact-links">
+        <div class="profile__contact-content">
+          <a class="profile__contact-link" href="https://linkedin.com/in/davidriveroalegre" rel="noopener noreferrer" target="_blank">
+            <span class="icon-linkedin"></span>
+          </a>
+        </div>
+        <div class="profile__contact-content">
+          <a class="profile__contact-link" href="https://github.com/david-rivero" rel="noopener noreferrer" target="_blank">
+            <span class="icon-github"></span>
+          </a>
+        </div>
+        <div class="profile__contact-content">
+          <a class="profile__contact-link" href="https://twitter.com/DavidRiveroAl" rel="noopener noreferrer" target="_blank">
+            <span class="icon-twitter"></span>
+          </a>
         </div>
       </div>
-    </header>
-
-    <section>
-      <div id="aboutme" class="container section-desc wall-section">
-        <div class="section-component">
-          <h3>Who am I?</h3>
-          <p>I'm a passionate developer and a continuous self taught. Actually I study Information Technologies Analyst at ORT University;
-             and when I have time, I invest my time creating amazing personal projects.</p>
-          <p>I like to dedicate my time finding ideas that could impact in communities and
-             citizens and do that with code; and finding amazing teams that want to change the world.</p>
-          <p>I'm really motivate for learn new technologies as reactive applications, IoT, machine learning, etc.
-             and also find people with the same passion with its own work.</p>
-        </div>
-      </div>
-
-      <div id="skills" class="skills wall-section">
-        <h3>Skills</h3>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="dist/img/html5.png" alt="HTML5"></div>
-          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="dist/img/js.svg" alt="Javascript"></div>
-          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="dist/img/angular.svg" alt="AngularJs"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="dist/img/python.svg" alt="Python"></div>
-          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="dist/img/django.svg" alt="Django"></div>
-          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="dist/img/sass.svg" alt="Sass"></div>
-        </div>
-        <!-- <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12 skill_item"><img src="dist/img/react.svg" alt="ReactJs"></div>
-        </div> -->
-      </div>
-
-      <div class="container section-desc wall-section">
-        <div class="section-component">
-          <h3>Attend' meetings</h3>
-          <div class="row inner-container-experience">
-            <div class="col-md-5 col-sm-6 col-xs-12">
-              <p>Startup Weekend 2016</p>
-              <figure class="attending-img">
-                <img src="dist/img/startup-weekend-mvd2.jpg" alt="Startup Weekend Montevideo 2016">
-              </figure>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-              <p>NASA Space Apps Challenge 2016</p>
-              <figure class="attending-img">
-                <img src="dist/img/nasa.jpg" alt="NASA Space Apps 2016">
-              </figure>
-            </div>
-            <div class="col-md-5 col-sm-6 col-xs-12">
-              <p>Mercado Libre Hackathon</p>
-              <figure class="attending-img">
-                <img src="dist/img/mercado-libre-montevideo.png" alt="Mercado Libre Hackathon 2015">
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="wall-img wall-nasa">
-        <div class="wall-img-cover-op">
-          <p>NASA Space Apps 2016 - Equipo Pastora</p>
-        </div>
-      </div>
-
-      <div class="section-component wall-section">
-        <h3>Experience</h3>
-        <div class="row inner-container-experience">
-          <div class="col-md-3"></div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <p class="text-center">Software Developer at Sophilabs</p>
-            <figure class="experience-img">
-              <img src="dist/img/sophilabs.svg" alt="Sophilabs">
-            </figure>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <p class="text-center">Volunteer at JsConf Uruguay 2016</p>
-            <figure class="experience-img">
-              <img src="dist/img/jsconf-logo.svg" alt="JsConf Uruguay 2016">
-            </figure>
-          </div>
-          <div class="col-md-3"></div>
-        </div>
-      </div>
-
-      <div class="wall-img wall-jsconf">
-        <div class="wall-img-cover-op">
-          <p>JsConf Uruguay 2016</p>
-        </div>
-      </div>
-
-      <div id="projects" class="section-component wall-section">
-          <h3>Personal projects</h3>
-          <div class="row">
-            <div class="col-proj col-md-6 col-sm-12 col-xs-12">
-              <h3>TVify</h3>
-              <figure><img src="dist/img/film_icon.png" alt="Icon made by SimpleIcon, simpleicon.com"></figure>
-              <p>Find your favourites TV shows in one place.</p>
-              <div><span>Demo: </span><a href="http://drivalegre.github.io/TVify">http://drivalegre.github.io/TVify</a></div>
-            </div>
-            <div class="col-proj col-md-6 col-sm-12 col-xs-12">
-              <h3>TweetFinder Stream</h3>
-              <figure><img src="dist/img/tweetstream.png" alt="Icon made by SimpleIcon, simpleicon.com"></figure>
-              <p>A ReactJs and Angular app for request for a stream API by Twitter.</p>
-              <div><span class="coming_soon">Coming soon</span></div>
-            </div>
-          </div>
-          <div class="view_more">
-            <h3><a href="https://github.com/DRivAlegre" target="_blank">View more on Github</a></h3>
-            <i></i>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <footer class="wall-section">
-      <div class="socialfooter">
-        <p>Contact me</p>
-        <div class="socialicons">
-          <a href="https://twitter.com/davidriveroale" target="_blank"><span class="flaticon-twitter1"></span></a>
-          <a href="https://uy.linkedin.com/in/davidriveroalegre" target="blank_"><span class="flaticon-linkedin12"></span></a>
-        </div>
-      </div>
-      <div class="minift">Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a>, <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-    </footer>
-
-    <div class="navigator">
     </div>
   </body>
 </html>

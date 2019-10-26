@@ -1,15 +1,57 @@
-@media screen and (min-width: 992px) {
-  body#main_body {
-    font-size: 18px;
 
-    .wall-section {
-      height: 100vh;
+/*
+ * Max width for mobile (portrait and landscape)
+ */
+@media screen and (max-width: 767px) {
+  .body-index .profile__pict-content {
+    min-width: 200px;
+  }
+
+  .body-timeline {
+    .footer {
+      flex-wrap: wrap;
+
+      .footer__social-network-content {
+        margin-left: 0;
+        order: 0;
+      }
+
+      .footer__social-network-item:first-child {
+        margin-left: 0;
+      }
+
+      .footer__social-network-title {
+        margin-left: 0;
+      }
+
+      .footer__contact {
+        order: 1;
+        width: 100%;
+      }
     }
   }
 }
 
-@media screen and (max-width: 991px) {
-  section div.section-desc {
-    border: none;
+/*
+ * Range width for landscape
+ */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .section__item {
+    width: 50%;
+  }
+}
+
+/*
+ * Range width for portrait
+ */
+@media screen and (max-width: 480px) {
+  .footer__submit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .section__item {
+    width: 100%;
   }
 }

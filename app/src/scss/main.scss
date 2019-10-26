@@ -1,3 +1,14 @@
+@import 'base/colors';
+@import 'base/links';
 @import 'base/util';
 @import 'view/index';
+@import 'view/timeline';
 @import 'view/responsive';
+
+body {
+  color: $white;
+  font-family: 'Hind Vadodara', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
