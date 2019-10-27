@@ -1,4 +1,3 @@
-
 /*
  * Max width for mobile (portrait and landscape)
  */
@@ -38,6 +37,13 @@
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .section__item {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .section__content-intro {
+    margin: auto;
+    max-width: 75vw;
   }
 }
 
