@@ -1,0 +1,178 @@
+.body-timeline {
+  background-color: $science_blue;
+  color: $white;
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.header {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $smoke_white;
+  width: 100%;
+  height: 35vh;
+}
+
+.header__profile-pick {
+  bottom: -4.5rem;
+  margin: 0;
+  max-width: 250px;
+  min-width: 150px;
+  position: absolute;
+  left: 2rem;
+  width: 20vw;
+
+  img {
+    border-radius: 100%;
+    width: 100%;
+  }
+}
+
+.section {
+  margin-top: 420px;
+}
+
+.section__container {
+  margin-bottom: 4rem;
+  padding: 0.5rem 1rem;
+
+  &--light-mode {
+    background-color: $white;
+    color: $dark;
+  }
+
+  // Is there a bug with :last-child?
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-left: 7.5vw;
+}
+
+.section__content {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  &.section__content-portfolio {
+    margin-left: 7.5vw;
+  }
+}
+
+.section__item {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  text-align: center;
+  width: 33.33%;
+
+  .section__item-pict {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin: 0 auto 1rem auto;
+    max-width: 120px;
+    padding: 0 20%;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .section__item-name,
+  .section__item-company-name,
+  .section__item-time {
+    display: block;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+  }
+
+  .section__item-time {
+    font-weight: 300;
+  }
+}
+
+.footer {
+  background-color: $bitter_sweet;
+  display: flex;
+  padding: 1.5rem;
+}
+
+.footer__contact {
+  width: 40%;
+}
+
+.footer__contact-title,
+.footer__social-network-title {
+  font-size: 2rem;
+}
+
+.footer__contact-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__input {
+  border: 0;
+  color: $black;
+  display: block;
+  font-family: 'Hind Vadodara', sans-serif;
+  margin: 0.5rem 0;
+  outline: none;
+  resize: none;
+  padding: 0.5rem;
+  width: 100%;
+
+  &:hover,
+  &:active {
+    outline: none;
+  }
+
+  &.footer__textarea {
+    margin-bottom: 1rem;
+    min-height: 5rem;
+  }
+}
+
+.footer__submit {
+  background-color: $mojo;
+  border: 0;
+  border-radius: 1px;
+  color: $white;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer__social-network-content {
+  margin-left: 5rem;
+
+  .footer__social-network-list {
+    display: flex;
+  }
+}
+
+.footer__social-network-title {
+  margin-left: 0.75rem;
+}
+
+.footer__social-network-item {
+  font-size: 2rem;
+  margin: 0 0.75rem;
+
+  .footer__social-network-link {
+    color: $white;
+    text-decoration: none;
+  }
+}
