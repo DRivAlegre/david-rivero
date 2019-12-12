@@ -83,6 +83,12 @@
     padding: 0 20%;
     width: 100%;
 
+    &.section__item-pict-project {
+      margin: .5rem 0 1rem;
+      max-width: 100%;
+      padding: 0;
+    }
+
     img {
       width: 100%;
     }
@@ -90,7 +96,8 @@
 
   .section__item-name,
   .section__item-company-name,
-  .section__item-time {
+  .section__item-time,
+  .section__item-project-name {
     display: block;
     font-weight: 500;
     margin: 0;
@@ -99,6 +106,10 @@
 
   .section__item-time {
     font-weight: 300;
+  }
+
+  .section__item-project-link {
+    width: 100%;
   }
 }
 
