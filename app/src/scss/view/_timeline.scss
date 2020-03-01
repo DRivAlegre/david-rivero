@@ -131,6 +131,16 @@
 .footer__contact-form {
   display: flex;
   flex-wrap: wrap;
+
+  &.hide-form {
+    display: none;
+  }
+}
+
+.footer__contact-status {
+  &.hide-form-status {
+    display: none;
+  }
 }
 
 .footer__input {
@@ -152,6 +162,20 @@
   &.footer__textarea {
     margin-bottom: 1rem;
     min-height: 5rem;
+  }
+}
+
+.error-container {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.error-message {
+  color: $white;
+  font-size: 1rem;
+
+  &.error-message-hidden {
+    display: none;
   }
 }
 

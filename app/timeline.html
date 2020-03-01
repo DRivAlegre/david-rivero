@@ -147,11 +147,17 @@
       <div class="footer__contact">
         <h3 class="footer__contact-title">Contact me</h3>
         <form class="footer__contact-form">
-          <input placeholder="Mail" type="email" name="Mail" class="footer__input" />
-          <input placeholder="Subject" type="text" name="About" class="footer__input" />
-          <textarea placeholder="Message" name="Message" class="footer__input footer__textarea"></textarea>
+          <input placeholder="Mail" type="email" name="Mail" class="footer__input" required />
+          <input placeholder="Subject" type="text" name="Subject" class="footer__input" required />
+          <textarea placeholder="Message" name="Message" class="footer__input footer__textarea" required></textarea>
+          <div class="error-container">
+            <div class="error-message invalid-mail error-message-hidden">You must to add a valid mail</div>
+            <div class="error-message invalid-subject error-message-hidden">You must to add a subject to continue</div>
+            <div class="error-message invalid-message error-message-hidden">You must to add a message to continue</div>
+          </div>
           <button class="footer__submit">Send</button>
         </form>
+        <div class="footer__contact-status hide-form-status"></div>
       </div>
       <div class="footer__social-network-content">
         <h3 class="footer__social-network-title">My social accounts</h3>
@@ -174,5 +180,9 @@
         </div>
       </div>
     </footer>
+    <div class="spinner-container hide-spinner">
+      <div class="spinner"></div>
+    </div>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
