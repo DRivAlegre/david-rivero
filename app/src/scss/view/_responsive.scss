@@ -35,9 +35,17 @@
  * Range width for landscape
  */
 @media screen and (min-width: 375px) and (max-width: 767px) {
+  .section__content.section__content-portfolio {
+    margin-left: 0;
+  }
+
   .section__item {
     width: 50%;
-  }
+
+    &.section__item-project {
+      width: 100%;
+    }
+  } 
 }
 
 @media screen and (min-width: 481px) {
@@ -57,7 +65,8 @@
 }
 
 @media screen and (max-width: 374px) {
-  .section__item {
+  .section__item,
+  .section__item.section__item-project {
     width: 100%;
   }
 }

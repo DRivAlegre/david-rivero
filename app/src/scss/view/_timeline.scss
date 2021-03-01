@@ -74,6 +74,11 @@
   text-align: center;
   width: 33.33%;
 
+  &.section__item-project {
+    margin: 1rem;
+    width: 25%;
+  }
+
   .section__item-pict {
     align-items: center;
     display: flex;
@@ -84,9 +89,14 @@
     width: 100%;
 
     &.section__item-pict-project {
-      margin: .5rem 0 1rem;
-      max-width: 100%;
+      margin: 1rem auto 2rem;
+      width: 100%;
       padding: 0;
+    }
+
+    .outdoor-now-img {
+      margin: auto;
+      max-width: 150px;
     }
 
     img {
